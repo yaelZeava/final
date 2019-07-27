@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+button{border-radius: 2px;
+    position: relative;
+    padding: 0.8%;
+   
+  display: inline-block;
+  color: #ffffff;
+ 
+  text-decoration:none;
+  font: 100% bold ;
+  font-style: inherit;
+  font-weight: 400;
+  font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  text-align: center;
+  border: solid 0.03em #ffffff;
+  box-shadow:0 1px 3px rgba(0, 0, 0, 0.12);
+} 
+body{
+    font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+mwlResizable {
+    box-sizing: border-box; 
+  }

@@ -1,0 +1,7 @@
+<div >
+  <button type="button"  md-button (click)="imgFileInput.click()">add img</button>
+  <input hidden type="file" #imgFileInput (change)="onChange($event)" />
+</div>
+<div *ngFor="let item of photos" >
+  <img [id]="item.path" [src]="'http://localhost:61739/UploadFile/'+item.userId+'/'+item.path" (click)="pic(item)"/>
+</div>

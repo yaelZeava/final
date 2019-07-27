@@ -1,0 +1,38 @@
+div{
+    position: relative;
+
+border:black;
+    border-width: 2px;
+}
+.active-section {
+    background: red;
+}
+
+.big{
+    height: 80%;
+    width: 100vw;
+}
+#pages{
+    border:black;
+    border-width: 2px;
+    height: 10%;
+    width: 100vw;
+}
+footer{
+    height: 2%;
+    width: 100vw;
+}
+.main{
+    height: 100%;
+    width: 100%;
+}
+#workspace{
+    height: 80vh; 
+}
+#navbar{
+    height: 65vh; 
+}
+#paper{
+    height: 80vw;
+    width: 80vw;
+}

@@ -1,0 +1,39 @@
+<div class="container main">
+  <div class="row big">
+
+
+    <div id="workspace" class="col-sm-12 row jumbotron">
+      <app-workspace [selectedStickers]="selectedStickers" class="col-sm-8"></app-workspace>
+      <div id="navbar" class="col-sm-2">
+        <span [class.active-section]="showSection === 'background'" (click)="showSection = 'background'">background</span>
+
+        <app-background *ngIf="showSection === 'background'"></app-background>
+
+        <br>
+        <hr>
+        <span [class.active-section]="showSection === 'stickers'" (click)="showSection = 'stickers'">stickers</span>
+
+        <app-stickers (selectedSticker)="selectedStickers.push($event)" *ngIf="showSection === 'stickers'"></app-stickers>
+
+        <br>
+        <hr>
+
+
+        <span [class.active-section]="showSection === 'template-page'" (click)="showSection = 'template-page'">template-page
+        </span>
+        <app-template-page *ngIf="showSection === 'template-page'"></app-template-page>
+        <br>
+        <hr>
+
+
+        <span [class.active-section]="showSection === 'photo'" (click)="showSection = 'photo'">photo
+        </span>
+        <app-photo *ngIf="showSection === 'photo'"></app-photo>
+      </div>
+    </div>
+    <div id="pages" class="row" class="col-sm-12">
+      <app-pages></app-pages>
+    </div>
+
+    <footer class="row" class="col-sm-12">@picture</footer>
+  </div>

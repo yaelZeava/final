@@ -1,0 +1,5 @@
+<div id="left">
+  <div *ngFor="let item of stickers" style="display:inline-block;">
+    <img [id]="item.path" style="height:30px;width:30px" (click)="selectedSticker.emit(item)" [src]="'http://'+item.path" ngDraggable />
+  </div>
+</div>

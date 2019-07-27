@@ -1,0 +1,4 @@
+<div *ngFor="let item of pages" [innerHtml]="item.path|safeHTML" (click)="Paper(item)">
+ 
+  {{item.NumInAlbom}}
+</div>

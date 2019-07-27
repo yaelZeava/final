@@ -1,0 +1,3 @@
+<div *ngFor="let item of backgrounds" (click)="changeBackground(item)">
+    <img [src]="'http://localhost:61739/img/background/'+item.path"/>
+  </div>

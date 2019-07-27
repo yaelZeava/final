@@ -1,0 +1,66 @@
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+	<div class="row">
+		
+<!-- Mixins-->
+<!-- Pen Title-->
+<div class="pen-title">
+  
+</div>
+<div class="container">
+  <div class="card"></div>
+  <div class="card">
+    <h1 class="title">Login</h1>
+    <form>
+      <div class="input-container">
+        <input type="text" id="Username" required="required" [(ngModel)]="currentUser.UserName" name="UserName"/>
+        <label for="Username">Username</label>
+        <div class="bar"></div>
+      </div>
+      <div class="input-container">
+        <input type="password" id="Password" required="required" [(ngModel)]="currentUser.UserPassword" name="UserPassword"/>
+        <label for="Password">Password</label>
+        <div class="bar"></div>
+      </div>
+      <div class="button-container">
+        <button (click)="CheckUser()" ><span>Go</span></button>
+      </div>
+      
+    </form>
+  </div>
+  <div class="card alt">
+    <div  (click)="toggle()" class="toggle"><h5>Register</h5> </div>
+    <h1 class="title">Register
+      <div class="close" (click)="close()"></div>
+    </h1>
+    <form>
+      <div class="input-container">
+        <input type="text" id="Username" required="required" [(ngModel)]="currentUser.UserName" name="UserName"/>
+        <label for="Username">Username</label>
+        <div class="bar"></div>
+      </div>
+      <div class="input-container">
+        <input type="password" id="Password" required="required" [(ngModel)]="currentUser.UserPassword" name="UserPassword"/>
+        <label for="Password">Password</label>
+        <div class="bar"></div>
+      </div>
+      <div class="input-container">
+        <input type="email" id="UserMail" required="required" [(ngModel)]="currentUser.UserMail" name="UserMail"/>
+        <label for="UserMail">Mail</label>
+        <div class="bar"></div>
+      </div>
+      <div class="button-container">
+        <button (click)="Register()"><span>Save</span></button>
+      </div>
+    </form>
+  </div>
+</div>
+
+	</div>
+</div>

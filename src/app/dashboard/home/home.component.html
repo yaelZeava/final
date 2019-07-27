@@ -1,0 +1,16 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<nav class="nav nav-pills" role="tablist"> 
+    <li style="background-image: url('../../../assets/logo.png')"></li>
+     <li style="background-color:#8ffe09"            routerLink="wellcome">Picture</li>
+     <li style="background-color:rgb(31, 192, 255)" *ngIf="currentid" routerLink="/new-album">New Album</li>   
+    <li  style="background-color:#ec2652"           *ngIf="currentid" routerLink="/view-album">View Album</li>
+    <li   style="background-color:#8ffe09"*ngIf="currentid" routerLink="/edit-album">Edit Album</li>
+    <li  style="background-color:rgb(31, 192, 255)" routerLink="Login" >Login</li>
+</nav>
+<div class="big">
+     <router-outlet></router-outlet>
+     </div>
+   
+    

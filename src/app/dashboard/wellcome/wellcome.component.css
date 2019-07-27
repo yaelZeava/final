@@ -1,0 +1,8 @@
+body{font: 150% bold ;
+  font-style: inherit;
+  font-weight: 400;
+  font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  text-align: center;
+  border: solid 3px #ffffff;}
+  .sidenav{
+  box-shadow:0 1px 3px rgba(0, 0, 0, 0.12);}

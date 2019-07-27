@@ -1,0 +1,5 @@
+<div *ngFor="let item of currentAlboms" >
+  <p>{{item.AlbomName}}</p>
+  <button value="edit album" routerLink="/edit-album" (click)="Edit(item)">edit album</button>
+</div>
+<button  routerLink="/new-album" >new album</button>

@@ -1,0 +1,12 @@
+
+  <form>
+    <input type="date"  [(ngModel)]="newAlbum.AlbomDate" name="AlbomDate">
+    <input  type="text" [(ngModel)]="newAlbum.AlbomName" name="AlbomName">
+    <input type="number" [(ngModel)]="newAlbum.NumOfPage" name="NumOfPage">
+  </form>
+  <p>choose size</p>
+  <div *ngFor="let item of TemplateAlbum" >
+    <p>height:{{item.PageSizeheight}}</p>
+    <p>width:{{item.PageSizewidth}}</p>
+     <button  routerLink="/view-album" (click)="create(item)">create album</button>
+  </div>
